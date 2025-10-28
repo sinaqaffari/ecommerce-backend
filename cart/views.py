@@ -5,6 +5,7 @@ from .models import Cart
 
 
 class CartViewSet(viewsets.ModelViewSet):
+    query_set = Cart.objects.all()
     serializer_class = CartSerializer
     permission_classes = [IsAuthenticated]
 
