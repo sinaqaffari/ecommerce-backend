@@ -27,7 +27,7 @@ urlpatterns = [
     path('api/payments/', include('payments.urls')),
     path('api/products/', include('products.urls')),
     path('api/cart/', include('cart.urls')),
-    path('api/token/', TokenObtainPairView.as_view(), name="token_obtain"),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name="token_refresh"),
+    path('api/token/', TokenObtainPairView.as_view(), name="token_obtain"), #JWT endpoints
+    path('api/token/refresh/', TokenRefreshView.as_view(), name="token_refresh"), #JWT endpoints
     path('api/users/<int:pk>/', UserDetailView.as_view(), name="user_detail_view"),
 ]
