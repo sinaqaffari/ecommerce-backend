@@ -3,7 +3,6 @@ from .models import CustomUser
 from .serializers import UserSerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.views import TokenObtainPairView
-from rest_framework.response import Response
 from rest_framework_simplejwt.settings import api_settings as SIMPLE_JWT
 
 
